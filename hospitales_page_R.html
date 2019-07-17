@@ -262,10 +262,8 @@
                                 <li>
                                     <a href="hospitales_page_R.html">Modalidades de Titulación</a>
                                 </li>
-
                             </ul>
                         </li>
-                        <li><a href="hospitales_page_R.html">Movilidad Internacional</a></li>
                         <li><a href="hospitales_page_R.html">Capacitación y Consultoría</a></li>
                         <li><a href="hospitales_page_R.html">Postgrado</a></li>
                         <li><a href="hospitales_page_R.html">Descuentos y Beneficios</a></li>
@@ -488,11 +486,13 @@
                                         <td class="center">2019-06-02</td>
                                         <td class="center">La Paz</td>
                                         <td class="text-center">
-                                            <button type="button" class="btn btn-info btn-xs show-modal modal-ml">
-                                                <i class="fa fa-eye"></i>
+                                            <button type="button" class="btn btn-success btn-xs delete-modal modal-ml"
+                                                data-id="{{ $u->user_id }}">
+                                                <i class="fa fa-user"></i>
                                             </button>
-                                            <button type="button" class="btn btn-warning btn-xs edit-modal modal-ml">
-                                                <i class="fa fa-edit"></i>
+                                            <button type="button" class="btn btn-primary btn-xs delete-modal modal-ml"
+                                                data-id="{{ $u->user_id }}">
+                                                <i class="fa fa-check-circle"></i>
                                             </button>
                                             <button type="button" class="btn btn-danger btn-xs delete-modal modal-ml"
                                                 data-id="{{ $u->user_id }}">
@@ -509,16 +509,19 @@
                                         <td class="center">2019-06-02</td>
                                         <td class="center">Santa Cruz, Cochabamba</td>
                                         <td class="text-center">
-                                            <button type="button" class="btn btn-info btn-xs show-modal modal-ml">
-                                                <i class="fa fa-eye"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-warning btn-xs edit-modal modal-ml">
-                                                <i class="fa fa-edit"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-danger btn-xs delete-modal modal-ml"
-                                                data-id="{{ $u->user_id }}">
-                                                <i class="fa fa-trash"></i>
-                                            </button>
+                                            <div class="dropdown">
+                                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fa fa-exclamation-circle"></i>
+                                                    Acciones
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Detalle</a>
+                                                    <a class="dropdown-item" href="#">Editar</a>
+                                                    <a class="dropdown-item" href="#">Eliminar</a>
+                                                    <a class="dropdown-item" href="#">Persona de contacto</a>
+                                                    <a class="dropdown-item" href="#">Resumen de ejecución</a>
+                                                </div>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr class="gradeX">
@@ -539,6 +542,14 @@
                                             <button type="button" class="btn btn-danger btn-xs delete-modal modal-ml"
                                                 data-id="{{ $u->user_id }}">
                                                 <i class="fa fa-trash"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-success btn-xs delete-modal modal-ml"
+                                                data-id="{{ $u->user_id }}">
+                                                <i class="fa fa-user"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-primary btn-xs delete-modal modal-ml"
+                                                data-id="{{ $u->user_id }}">
+                                                <i class="fa fa-check-circle"></i>
                                             </button>
                                         </td>
                                     </tr>
@@ -561,6 +572,14 @@
                                                 data-id="{{ $u->user_id }}">
                                                 <i class="fa fa-trash"></i>
                                             </button>
+                                            <button type="button" class="btn btn-success btn-xs delete-modal modal-ml"
+                                                data-id="{{ $u->user_id }}">
+                                                <i class="fa fa-user"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-primary btn-xs delete-modal modal-ml"
+                                                data-id="{{ $u->user_id }}">
+                                                <i class="fa fa-check-circle"></i>
+                                            </button>
                                         </td>
                                     </tr>
                                     <tr class="gradeX">
@@ -581,6 +600,14 @@
                                             <button type="button" class="btn btn-danger btn-xs delete-modal modal-ml"
                                                 data-id="{{ $u->user_id }}">
                                                 <i class="fa fa-trash"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-success btn-xs delete-modal modal-ml"
+                                                data-id="{{ $u->user_id }}">
+                                                <i class="fa fa-user"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-primary btn-xs delete-modal modal-ml"
+                                                data-id="{{ $u->user_id }}">
+                                                <i class="fa fa-check-circle"></i>
                                             </button>
                                         </td>
                                     </tr>
@@ -603,6 +630,14 @@
                                                 data-id="{{ $u->user_id }}">
                                                 <i class="fa fa-trash"></i>
                                             </button>
+                                            <button type="button" class="btn btn-success btn-xs delete-modal modal-ml"
+                                                data-id="{{ $u->user_id }}">
+                                                <i class="fa fa-user"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-primary btn-xs delete-modal modal-ml"
+                                                data-id="{{ $u->user_id }}">
+                                                <i class="fa fa-check-circle"></i>
+                                            </button>
                                         </td>
                                     </tr>
                                     <tr class="gradeX">
@@ -623,6 +658,14 @@
                                             <button type="button" class="btn btn-danger btn-xs delete-modal modal-ml"
                                                 data-id="{{ $u->user_id }}">
                                                 <i class="fa fa-trash"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-success btn-xs delete-modal modal-ml"
+                                                data-id="{{ $u->user_id }}">
+                                                <i class="fa fa-user"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-primary btn-xs delete-modal modal-ml"
+                                                data-id="{{ $u->user_id }}">
+                                                <i class="fa fa-check-circle"></i>
                                             </button>
                                         </td>
                                     </tr>
@@ -645,6 +688,14 @@
                                                 data-id="{{ $u->user_id }}">
                                                 <i class="fa fa-trash"></i>
                                             </button>
+                                            <button type="button" class="btn btn-success btn-xs delete-modal modal-ml"
+                                                data-id="{{ $u->user_id }}">
+                                                <i class="fa fa-user"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-primary btn-xs delete-modal modal-ml"
+                                                data-id="{{ $u->user_id }}">
+                                                <i class="fa fa-check-circle"></i>
+                                            </button>
                                         </td>
                                     </tr>
                                     <tr class="gradeX">
@@ -665,6 +716,14 @@
                                             <button type="button" class="btn btn-danger btn-xs delete-modal modal-ml"
                                                 data-id="{{ $u->user_id }}">
                                                 <i class="fa fa-trash"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-success btn-xs delete-modal modal-ml"
+                                                data-id="{{ $u->user_id }}">
+                                                <i class="fa fa-user"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-primary btn-xs delete-modal modal-ml"
+                                                data-id="{{ $u->user_id }}">
+                                                <i class="fa fa-check-circle"></i>
                                             </button>
                                         </td>
                                     </tr>
@@ -687,6 +746,14 @@
                                                 data-id="{{ $u->user_id }}">
                                                 <i class="fa fa-trash"></i>
                                             </button>
+                                            <button type="button" class="btn btn-success btn-xs delete-modal modal-ml"
+                                                data-id="{{ $u->user_id }}">
+                                                <i class="fa fa-user"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-primary btn-xs delete-modal modal-ml"
+                                                data-id="{{ $u->user_id }}">
+                                                <i class="fa fa-check-circle"></i>
+                                            </button>
                                         </td>
                                     </tr>
                                     <tr class="gradeX">
@@ -707,6 +774,14 @@
                                             <button type="button" class="btn btn-danger btn-xs delete-modal modal-ml"
                                                 data-id="{{ $u->user_id }}">
                                                 <i class="fa fa-trash"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-success btn-xs delete-modal modal-ml"
+                                                data-id="{{ $u->user_id }}">
+                                                <i class="fa fa-user"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-primary btn-xs delete-modal modal-ml"
+                                                data-id="{{ $u->user_id }}">
+                                                <i class="fa fa-check-circle"></i>
                                             </button>
                                         </td>
                                     </tr>
@@ -729,6 +804,14 @@
                                                 data-id="{{ $u->user_id }}">
                                                 <i class="fa fa-trash"></i>
                                             </button>
+                                            <button type="button" class="btn btn-success btn-xs delete-modal modal-ml"
+                                                data-id="{{ $u->user_id }}">
+                                                <i class="fa fa-user"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-primary btn-xs delete-modal modal-ml"
+                                                data-id="{{ $u->user_id }}">
+                                                <i class="fa fa-check-circle"></i>
+                                            </button>
                                         </td>
                                     </tr>
                                     <tr class="gradeX">
@@ -750,6 +833,14 @@
                                                 data-id="{{ $u->user_id }}">
                                                 <i class="fa fa-trash"></i>
                                             </button>
+                                            <button type="button" class="btn btn-success btn-xs delete-modal modal-ml"
+                                                data-id="{{ $u->user_id }}">
+                                                <i class="fa fa-user"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-primary btn-xs delete-modal modal-ml"
+                                                data-id="{{ $u->user_id }}">
+                                                <i class="fa fa-check-circle"></i>
+                                            </button>
                                         </td>
                                     </tr>
                                     <tr class="gradeX">
@@ -770,6 +861,14 @@
                                             <button type="button" class="btn btn-danger btn-xs delete-modal modal-ml"
                                                 data-id="{{ $u->user_id }}">
                                                 <i class="fa fa-trash"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-success btn-xs delete-modal modal-ml"
+                                                data-id="{{ $u->user_id }}">
+                                                <i class="fa fa-user"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-primary btn-xs delete-modal modal-ml"
+                                                data-id="{{ $u->user_id }}">
+                                                <i class="fa fa-check-circle"></i>
                                             </button>
                                         </td>
                                     </tr>
